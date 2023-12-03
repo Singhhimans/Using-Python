@@ -1,0 +1,31 @@
+#it is store simple image
+import cv2
+img=cv2.imread(r'D:\Users\hssin\Downloads\opencv.jpg',1)
+img=cv2.resize(img,(700,300))#witdh,lenth
+img=cv2.flip(img,0)
+print("Image")
+cv2.imshow("Loard Shiva",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#it's a grayscale image
+
+img=cv2.imread(r'D:\Users\hssin\Downloads\opencv.jpg',0)
+img=cv2.resize(img,(700,300))#digits are represent the width,lenth
+img=cv2.flip(img,0)
+img=cv2.flip(img,0)
+print("Image")
+cv2.imshow("Loard Shiva",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#it's anydepth image
+
+
+img=cv2.imread(r'D:\Users\hssin\Downloads\opencv.jpg',-1)
+img=cv2.resize(img,(700,300))
+img=cv2.flip(img,0)
+print("Image")
+cv2.imshow("Loard Shiva",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
